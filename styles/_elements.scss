@@ -1,0 +1,43 @@
+.choose_reg_tabs{
+    .row > .col-6:first-child{
+        padding-right: 0;
+    }
+    .row > .col-6:last-child{
+        padding-left: 0;
+    }
+    .nav.nav-pills{
+        .nav-link{
+            border: 1px solid transparent;
+            margin: -1px;
+            @extend .text-right;
+            @extend .btn-link;
+            &.active{
+                border-color: $gray-300;
+                border-right-color: transparent;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                position: relative;
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    height: 100%;
+                    width: 2px;
+                    right: -1px;
+                    top:0px;
+                    background: $white;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    .tab-content{
+        border-left: 1px solid $gray-300;
+        @extend .pl-2;
+        min-height: 38px;
+        .nav{
+
+        }
+    }
+
+}
