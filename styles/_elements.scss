@@ -11,12 +11,14 @@
             margin: -1px;
             @extend .text-right;
             @extend .btn-link;
+            font-family: extrabold;
             &.active{
                 border-color: $gray-300;
                 border-right-color: transparent;
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
                 position: relative;
+                color: $link-hover-color;
                 &:before{
                     content: '';
                     display: block;
@@ -35,9 +37,22 @@
         border-left: 1px solid $gray-300;
         @extend .pl-2;
         min-height: 38px;
+        padding-left: 0 !important;
         .nav{
-
+            a{
+                color: $gray-600;
+                &:hover, &.active{
+                    color: $link-hover-color;
+                }
+            }
         }
     }
 
+}
+
+.top_banner{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
