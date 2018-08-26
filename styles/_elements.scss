@@ -1,8 +1,10 @@
+//buttons
+
 .choose_reg_tabs{
-    .row > .col-6:first-child{
+    .row > [class*=col]:first-child{
         padding-right: 0;
     }
-    .row > .col-6:last-child{
+    .row > [class*=col]:last-child{
         padding-left: 0;
     }
     .nav.nav-pills{
@@ -11,7 +13,6 @@
             margin: -1px;
             @extend .text-right;
             @extend .btn-link;
-            font-family: extrabold;
             &.active{
                 border-color: $gray-300;
                 border-right-color: transparent;
@@ -37,15 +38,16 @@
         border-left: 1px solid $gray-300;
         @extend .pl-2;
         min-height: 38px;
+        height: 100%;
         padding-left: 0 !important;
-        .nav{
-            a{
-                color: $gray-600;
-                &:hover, &.active{
-                    color: $link-hover-color;
-                }
+
+        a{
+            color: $gray-600;
+            &:hover, &.active{
+                color: $link-hover-color;
             }
         }
+
     }
 
 }
@@ -55,4 +57,53 @@
     background-position: center;
     background-size: cover;
     height: 400px;
+    margin: 0;
+}
+
+.regions_tabs{
+    .nav.nav-tabs{
+        margin-top: -46px;
+        border: none;
+        .nav-item{
+            font-size: $h5-font-size;
+            a{
+                border: none;
+                color: $white;
+                &.active{
+                    color: $dark;
+                }
+            }
+            @media (max-width: map_get($grid-breakpoints, sm)) {
+                &{
+                    & + .nav-item{
+                        a{
+                            border-top: 1px solid $gray-300;
+                            border-left: 1px solid $gray-300;
+                            border-right: 1px solid $gray-300;
+                            border-radius: 0;
+                        }
+
+                    }
+                    &:last-child{
+                        a{
+                            border-bottom: 1px solid $gray-300;
+                            border-radius: 0 0 $border-radius $border-radius;
+                        }
+
+                    }
+
+                    a{
+                        color: $dark;
+                        background: $white;
+                        border-bottom: 1px solid;
+                        &.active{
+                            background: $primary;
+                            border-color:  $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

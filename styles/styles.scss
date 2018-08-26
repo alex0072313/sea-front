@@ -1,3 +1,59 @@
 @import "bootstrap/bootstrap";
 @import "elements";
 
+header{
+    & > nav{
+        .btn-link{
+            color: $dark;
+        }
+        .navbar-toggler{
+            padding: 0;
+            border: none;
+            color: $primary;
+        }
+        .navbar-collapse{
+            margin: 0.5rem -1rem -0.5rem -1rem;
+            .nav-item {
+                border-top: 1px solid $gray-300;
+                & > a {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    .top{
+        border-bottom: 1px solid $gray-300;
+    }
+
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        &.on_banner{
+            .top{
+                border-bottom: none;
+            }
+            & > nav{
+                background: rgba(0,0,0,.3);
+                .btn-link{
+                    color: $white;
+                }
+                .navbar-collapse{
+                    margin: 0;
+                    .nav-item {
+                        border-top: none;
+                        & > a {
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+            }
+            .top_banner{
+                margin-top: -56px;
+            }
+
+        }
+    }
+
+
+
+}
+
