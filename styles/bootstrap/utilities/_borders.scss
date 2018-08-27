@@ -32,6 +32,7 @@
 
 .rounded {
   border-radius: $border-radius !important;
+  overflow: hidden;
 }
 .rounded-top {
   border-top-left-radius: $border-radius !important;

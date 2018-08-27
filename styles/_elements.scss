@@ -1,5 +1,7 @@
-//buttons
-
+.section_title{
+    @extend .pb-5;
+    @extend .mb-0;
+}
 .choose_reg_tabs{
     .row > [class*=col]:first-child{
         padding-right: 0;
@@ -51,7 +53,6 @@
     }
 
 }
-
 .top_banner{
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +60,6 @@
     height: 400px;
     margin: 0;
 }
-
 .regions_tabs{
     .nav.nav-tabs{
         margin-top: -46px;
@@ -106,4 +106,30 @@
             }
         }
     }
+}
+
+.object_small{
+    @extend .border;
+    @extend .rounded;
+    @extend .bg-white;
+    .thumb{
+        width: 85px;
+    }
+    .inf{
+        font-size: $font-size-xs;
+
+        .text-truncate{
+            max-width: 235px;
+            @media (max-width: map_get($grid-breakpoints, xl)) and (min-width:map_get($grid-breakpoints, lg)) {
+                max-width: 180px;
+            }
+        }
+    }
+    &:hover{
+        border-color: $link-hover-color !important;
+        a{
+            text-decoration: none;
+        }
+    }
+
 }
