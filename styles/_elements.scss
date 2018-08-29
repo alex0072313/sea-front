@@ -4,6 +4,22 @@
     @extend .mb-0;
 }
 
+.section_content{
+    @extend .py-4;
+    @extend .py-md-5;
+
+    & + .section_content{
+        @extend .pt-0;
+        @extend .pt-md-0;
+    }
+}
+
+.article_content{
+    @extend .py-4;
+    @extend .py-md-5;
+}
+
+
 .choose_reg_tabs{
     .row > [class*=col]:first-child{
         padding-right: 0;
@@ -108,12 +124,14 @@
             }
         }
     }
+    .tab-pane > .row > [class^=col] > ul:last-child{
+        @extend .mb-0;
+    }
 }
 
 .object_small{
-    @extend .border;
-    @extend .rounded;
     @extend .bg-white;
+    @extend .shadow-sm;
     .thumb{
         width: 85px;
     }
@@ -125,13 +143,38 @@
             @media (max-width: map_get($grid-breakpoints, xl)) and (min-width:map_get($grid-breakpoints, lg)) {
                 max-width: 180px;
             }
+            @media (max-width: map_get($grid-breakpoints, md)) {
+                max-width: inherit;
+                white-space: normal;
+            }
         }
     }
     &:hover{
-        border-color: $link-hover-color !important;
+        border-color: $link-color !important;
         a{
             text-decoration: none;
         }
     }
 
+}
+.last_reviews{
+    .review{
+        @extend .bg-white;
+        @extend .shadow-sm;
+        .text-truncate{
+            max-width: 320px;
+            @media (max-width: map_get($grid-breakpoints, xl)) and (min-width:map_get($grid-breakpoints, lg)) {
+                max-width: 280px;
+            }
+            @media (max-width: map_get($grid-breakpoints, md)) {
+                max-width: inherit;
+                white-space: normal;
+            }
+        }
+        &:hover{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
 }
