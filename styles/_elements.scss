@@ -1,7 +1,9 @@
 .section_title{
-    @extend .pb-5;
+    @extend .pb-md-5;
+    @extend .pb-4;
     @extend .mb-0;
 }
+
 .choose_reg_tabs{
     .row > [class*=col]:first-child{
         padding-right: 0;

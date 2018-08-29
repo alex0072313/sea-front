@@ -3124,7 +3124,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #dee2e6;
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -3138,13 +3138,14 @@ input[type="button"].btn-block {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1.25rem; }
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.5rem; }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.25rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3153,34 +3154,34 @@ input[type="button"].btn-block {
 .card-link:hover {
   text-decoration: none; }
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 1rem; }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  border-bottom: 1px solid #dee2e6; }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  border-top: 1px solid #dee2e6; }
   .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  margin-left: -0.5rem;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: -0.5rem;
+  margin-left: -0.5rem; }
 
 .card-img-overlay {
   position: absolute;
@@ -3273,7 +3274,7 @@ input[type="button"].btn-block {
             border-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.5rem; }
 @media (min-width: 576px) {
   .card-columns {
     column-count: 3;
@@ -5521,7 +5522,7 @@ button.bg-dark:focus {
 .px-4 {
   padding-right: 1.5rem !important; }
 
-.pb-4,
+.pb-4, .section_title,
 .py-4 {
   padding-bottom: 1.5rem !important; }
 
@@ -5540,7 +5541,7 @@ button.bg-dark:focus {
 .px-5 {
   padding-right: 3rem !important; }
 
-.pb-5, .section_title,
+.pb-5,
 .py-5 {
   padding-bottom: 3rem !important; }
 
@@ -6035,7 +6036,7 @@ button.bg-dark:focus {
   .px-md-5 {
     padding-right: 3rem !important; }
 
-  .pb-md-5,
+  .pb-md-5, .section_title,
   .py-md-5 {
     padding-bottom: 3rem !important; }
 
