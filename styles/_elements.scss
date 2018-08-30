@@ -178,3 +178,25 @@
         }
     }
 }
+
+.big_socials{
+    .btn{
+        border-radius: 100%;
+        color: $white;
+
+        padding: 0;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+
+        &.vk{background: #4f76a1;}
+        &.fb{background: #3b5897;}
+        &.od{background: #ef7d00;}
+        &.in{background: #a27a3c;}
+
+        &:hover{
+            background: $link-hover-color;
+        }
+    }
+}

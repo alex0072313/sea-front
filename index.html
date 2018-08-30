@@ -7,11 +7,11 @@
     <title>Главная</title>
 
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <header class="on_banner">
-        <div class="top bg-light">
+        <div class="top">
             <div class="container">
                 <div class="d-flex justify-content-between">
 
@@ -19,8 +19,8 @@
                         <a href="#" class="btn btn-link btn-sm pl-0 d-none d-sm-inline">Реклама</a>
                         <a href="#" class="btn btn-link btn-sm d-none d-sm-inline">О сайте</a>
 
-                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Сравнение"><i class="fa fa-filter"></i></a>
-                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Избранные"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Сравнение"><i class="fas fa-filter"></i></a>
+                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Избранные"><i class="fas fa-heart"></i></a>
                     </div>
 
                     <div class="">
@@ -601,7 +601,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 mt-md-0">
+                <div class="col-md-6 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
                     <div class="card review">
                         <a href="#" class="d-block">
                             <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
@@ -618,7 +618,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 mt-lg-0">
+                <div class="col-md-6 col-lg-4 mt-3 mt-lg-0 d-none d-lg-block">
                     <div class="card review">
                         <a href="#" class="d-block">
                             <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
@@ -635,7 +635,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none d-md-block v_t_last_reviews">
+                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
                     <div class="card review">
                         <a href="#" class="d-block">
                             <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
@@ -652,7 +652,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none d-md-block v_t_last_reviews">
+                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
                     <div class="card review">
                         <a href="#" class="d-block">
                             <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
@@ -669,7 +669,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none d-md-block v_t_last_reviews">
+                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
                     <div class="card review">
                         <a href="#" class="d-block">
                             <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
@@ -688,7 +688,7 @@
                 </div>
             </div>
 
-            <div class="text-center d-lg-none mt-3">
+            <div class="text-center mt-3">
                 <a href="javascript:;" onclick="visibility('.v_t_last_reviews', this);" class="btn btn-outline-primary">Показать еще</a>
             </div>
 
@@ -721,8 +721,37 @@
 
     <footer>
         <div class="container">
-
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="navbar-brand">Логотип</div>
+                    <div class="mb-2">Отдых на море без посредников.</div>
+                    <a href="#" class="btn btn-outline-primary">Разместить предложение</a>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">О сайте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Оферта</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="big_socials mb-2">
+                        <a href="#" class="btn btn-link vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="btn btn-link fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-link od"><i class="fab fa-odnoklassniki"></i></a>
+                        <a href="#" class="btn btn-link in"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <small>
+                        Copyright © 2018 | Sea.ru — сайт объявлений по отдыху на побережье.
+                        <br>Использование Вами сайта означает согласие с <a href="#">Пользовательским соглашением</a>.
+                        <br>Оплачивая услуги на сайте, вы принимаете <a href="#">оферту</a>.
+                    </small>
+                </div>
+            </div>
         </div>
+
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>

@@ -4318,7 +4318,7 @@ button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #006fa6 !important; }
 
-.bg-secondary, footer {
+.bg-secondary {
   background-color: #858585 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -4358,7 +4358,7 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light {
+.bg-light, footer {
   background-color: #fdf6f6 !important; }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -5495,7 +5495,8 @@ button.bg-dark:focus {
   padding: 1rem !important; }
 
 .pt-3,
-.py-3 {
+.py-3,
+footer {
   padding-top: 1rem !important; }
 
 .pr-3,
@@ -5503,7 +5504,8 @@ button.bg-dark:focus {
   padding-right: 1rem !important; }
 
 .pb-3,
-.py-3 {
+.py-3,
+footer {
   padding-bottom: 1rem !important; }
 
 .pl-3,
@@ -6013,7 +6015,8 @@ button.bg-dark:focus {
     padding: 1.5rem !important; }
 
   .pt-md-4,
-  .py-md-4 {
+  .py-md-4,
+  footer {
     padding-top: 1.5rem !important; }
 
   .pr-md-4,
@@ -6021,7 +6024,8 @@ button.bg-dark:focus {
     padding-right: 1.5rem !important; }
 
   .pb-md-4,
-  .py-md-4 {
+  .py-md-4,
+  footer {
     padding-bottom: 1.5rem !important; }
 
   .pl-md-4,
@@ -6893,6 +6897,25 @@ a.text-dark:hover, a.text-dark:focus {
       white-space: normal; } }
 .last_reviews .review:hover a {
   text-decoration: none; }
+
+.big_socials .btn {
+  border-radius: 100%;
+  color: #fff;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center; }
+  .big_socials .btn.vk {
+    background: #4f76a1; }
+  .big_socials .btn.fb {
+    background: #3b5897; }
+  .big_socials .btn.od {
+    background: #ef7d00; }
+  .big_socials .btn.in {
+    background: #a27a3c; }
+  .big_socials .btn:hover {
+    background: #005e8d; }
 
 header > nav .btn-link, header > nav .choose_reg_tabs .nav.nav-pills .nav-link, .choose_reg_tabs .nav.nav-pills header > nav .nav-link {
   color: #343a40; }

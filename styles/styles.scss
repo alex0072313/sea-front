@@ -56,6 +56,9 @@ header{
 }
 
 footer{
-    @extend .bg-secondary;
+    @extend .py-3;
+    @extend .py-md-4;
+
+    @extend .bg-light;
 }
 
