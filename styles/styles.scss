@@ -1,5 +1,4 @@
 @import "bootstrap/bootstrap";
-@import "bootstrap/bootstrap";
 @import "swiper/swiper.min.css";
 @import "mixins";
 @import "elements";
@@ -61,7 +60,6 @@ header{
 .apparts_section{
     @include bg('../images/appart.jpg', $primary, .8);
 }
-
 
 footer{
     @extend .py-3;
