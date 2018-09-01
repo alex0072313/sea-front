@@ -4408,7 +4408,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important; }
 
-.border-0 {
+.border-0, .regions_tabs .card-columns .card {
   border: 0 !important; }
 
 .border-top-0 {
@@ -5350,7 +5350,7 @@ button.bg-dark:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .section_title, .regions_tabs .tab-pane > .row > [class^=col] > ul:last-child,
+.mb-0, .section_title, .regions_tabs .tab-pane > .row > [class^=col] > ul:last-child, .regions_tabs .card-columns .card ul,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -5409,7 +5409,7 @@ button.bg-dark:focus {
 .swiper-container .sl-next {
   margin-right: 1rem !important; }
 
-.mb-3,
+.mb-3, .regions_tabs .card-columns .card,
 .my-3 {
   margin-bottom: 1rem !important; }
 
@@ -11243,7 +11243,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important; }
 
-.border-0 {
+.border-0, .regions_tabs .card-columns .card {
   border: 0 !important; }
 
 .border-top-0 {
@@ -12185,7 +12185,7 @@ button.bg-dark:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, .section_title, .regions_tabs .tab-pane > .row > [class^=col] > ul:last-child,
+.mb-0, .section_title, .regions_tabs .tab-pane > .row > [class^=col] > ul:last-child, .regions_tabs .card-columns .card ul,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -12244,7 +12244,7 @@ button.bg-dark:focus {
 .swiper-container .sl-next {
   margin-right: 1rem !important; }
 
-.mb-3,
+.mb-3, .regions_tabs .card-columns .card,
 .my-3 {
   margin-bottom: 1rem !important; }
 
@@ -13737,6 +13737,26 @@ a.text-dark:hover, a.text-dark:focus {
           background: #0091d9;
           border-color: #0091d9;
           color: #fff; } }
+.regions_tabs .card-columns {
+  column-count: 4;
+  column-gap: 30px; }
+  .regions_tabs .card-columns.colscnt3 {
+    column-count: 3; }
+  @media (max-width: 992px) {
+    .regions_tabs .card-columns {
+      column-count: 3; }
+      .regions_tabs .card-columns.colscnt3 {
+        column-count: 3; } }
+  @media (max-width: 768px) {
+    .regions_tabs .card-columns {
+      column-count: 2; }
+      .regions_tabs .card-columns.colscnt3 {
+        column-count: 2; } }
+  @media (max-width: 576px) {
+    .regions_tabs .card-columns {
+      column-count: 1; }
+      .regions_tabs .card-columns.colscnt3 {
+        column-count: 1; } }
 
 .object_small .thumb {
   width: 85px; }

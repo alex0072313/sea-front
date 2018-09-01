@@ -127,6 +127,45 @@
     .tab-pane > .row > [class^=col] > ul:last-child{
         @extend .mb-0;
     }
+
+    .card-columns{
+        column-count: 4;
+        column-gap: 30px;
+
+        &.colscnt3{
+            column-count: 3;
+        }
+
+        @media (max-width: map_get($grid-breakpoints, lg)) {
+            column-count: 3;
+            &.colscnt3{
+                column-count: 3;
+            }
+
+        }
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            column-count: 2;
+            &.colscnt3{
+                column-count: 2;
+            }
+
+        }
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            column-count: 1;
+            &.colscnt3{
+                column-count: 1;
+            }
+        }
+
+        .card{
+            @extend .border-0;
+            @extend .mb-3;
+            ul{
+                @extend .mb-0;
+            }
+        }
+    }
+
 }
 
 .object_small{
