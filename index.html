@@ -16,18 +16,18 @@
                 <div class="d-flex justify-content-between">
 
                     <div>
-                        <a href="#" class="btn btn-link btn-sm pl-0 d-none d-sm-inline">Реклама</a>
-                        <a href="#" class="btn btn-link btn-sm d-none d-sm-inline">О сайте</a>
+                        <a href="#" class="btn btn-link pl-0 d-none d-sm-inline-block">Реклама</a>
+                        <a href="#" class="btn btn-link d-none d-sm-inline-block">О сайте</a>
 
-                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Сравнение"><i class="fas fa-filter"></i></a>
-                        <a href="#" class="btn btn-link btn-sm d-inline d-sm-none" title="Избранные"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn btn-link d-inline d-sm-none" title="Сравнение"><i class="fas fa-filter"></i></a>
+                        <a href="#" class="btn btn-link d-inline d-sm-none" title="Избранные"><i class="fas fa-heart"></i></a>
                     </div>
 
                     <div class="">
-                        <a href="#" class="btn btn-link btn-sm d-none d-sm-inline" title="Сравнение"><i class="fa fa-filter"></i></a>
-                        <a href="#" class="btn btn-link btn-sm d-none d-sm-inline" title="Избранные"><i class="fa fa-heart"></i></a>
+                        <a href="#" class="btn btn-link d-none d-sm-inline-block" title="Сравнение"><i class="fa fa-filter"></i></a>
+                        <a href="#" class="btn btn-link d-none d-sm-inline-block" title="Избранные"><i class="fa fa-heart"></i></a>
 
-                        <a href="#" class="btn btn-link btn-sm pr-0">Вход / регистрация</a>
+                        <a href="#" class="btn btn-link pr-0">Вход / регистрация</a>
                     </div>
                 </div>
             </div>
@@ -579,124 +579,233 @@
         </div>
     </section>
 
-    <section class="last_reviews bg-light section_content">
+    <section class="popular_objects section_content">
         <div class="container">
-            <div class="section_title h2 text-center">Новые отзывы</div>
+            <div class="section_title h2 text-center">Популярные</div>
 
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
+            <div class="swiper-container objects_populars">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
 
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-primary font-weight-medium">8.8 Хорошо</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 12 отзывов</small>
+                                    </div>
+
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop2.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
+
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-success font-weight-medium">9.7 Великолепно</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 64 отзыва</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
+
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-primary font-weight-medium">8.8 Хорошо</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 12 отзывов</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop2.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
+
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-success font-weight-medium">9.7 Великолепно</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 64 отзыва</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
+
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-primary font-weight-medium">8.8 Хорошо</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 12 отзывов</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular">
+                            <a href="#">
+                                <div class="thumb rounded" style="background-image: url('images/pop2.jpg');"></div>
+                                <div class="inf py-2">
+                                    <div class="text-truncate">Гостиница "Империал"</div>
+                                    <span class="text-dark font-weight-medium">от 600 ₽ в сутки</span>
+
+                                    <div class="text-secondary mt-1 text-truncate"><small>Рыбачье, ул.Центральная 5</small></div>
+                                    <div class="review_raiting">
+                                        <small class="text-success font-weight-medium">9.7 Великолепно</small>
+                                        <small class="text-secondary ml-2"><i class="fa fa-comments"></i> 64 отзыва</small>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="object_popular add d-flex align-items-center p-3">
+                            <div class="text-white text-center">
+                                <div class="h5 mb-3">Получайте больше заявок с нами!</div>
+                                <a href="#" class="btn btn-orange">Добавить обьект</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-3 mt-md-0 d-none d-md-block">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
-
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-3 mt-lg-0 d-none d-lg-block">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
-
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
-
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
-
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mt-3 d-none v_t_last_reviews">
-                    <div class="card review">
-                        <a href="#" class="d-block">
-                            <img class="card-img-top" src="images/review_img.jpg" alt="Отзыв">
-                            <div class="card-body">
-                                <div class="text-truncate h6">Гостевой дом "На центральной"</div>
-
-                                <p class="card-text text-dark">Доброго времени суток, всем планирующим отдыхать в городе Геленджике.
-                                    Мы втроем отдыхали в номере «Семейный» с кухней № ...</p>
-                                <div class="row text-secondary">
-                                    <div class="col text-left text-uppercase"><small>Алла, Москва</small></div>
-                                    <div class="col text-right"><small>Июль 2018</small></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <div class="sl-prev"><i class="fa fa-angle-left"></i></div>
+                <div class="sl-next"><i class="fa fa-angle-right"></i></div>
             </div>
-
-            <div class="text-center mt-3">
-                <a href="javascript:;" onclick="visibility('.v_t_last_reviews', this);" class="btn btn-outline-primary">Показать еще</a>
-            </div>
-
         </div>
-
-
-
     </section>
+
+    <section class="apparts_section jumbotron jumbotron-fluid d-flex align-items-center text-white m-0">
+        <div class="container">
+            <div class="section_title h2 text-center">Почему с нами выгодно?</div>
+            <div class="row">
+                <div class="col-md-6 mb-md-0 mb-4 ">
+
+                    <div class="row mb-3">
+                        <div class="offset-sm-2 offset-md-3 col-md-9">
+                            <div class="h4 text-orange">Для владельцев:</div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-universal-access h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Быстрая регистрация</div>
+                            Это займет 2 минуты! Добавьте описание Вашего обьекта, фотографии и цены.
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-cog h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Удобное управление</div>
+                            Легко редактируйте информацию, отслеживайте статистику по вашему обьекту.
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-signal h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Результат</div>
+                            Получайте заявки на бронирование Вашего обьекта круглый год!
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-sm-2 offset-md-3 col-md-9">
+                            <a href="#" class="btn btn-orange btn-lg">Добавить обьект</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-3">
+                        <div class="offset-sm-2 offset-md-3 col-md-9">
+                            <div class="h4 text-orange">Для отдыхающих:</div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-database h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Обширная база обьектов</div>
+                            У нас на сайте более 1500 обьектов со всего побережья, есть из чего выбрать.
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-search h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Удобный поиск</div>
+                            Используйте возможности сайта чтобы найти именно то, что вам нужно!
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2 col-md-3 text-right pt-4 d-none d-sm-block">
+                            <i class="fa fa-check h1 mt-2 text-orange"></i>
+                        </div>
+                        <div class="col-sm-10 col-md-9">
+                            <div class="h5">Надежность</div>
+                            Мы рабоатаем только с проверенными хозяйвами, гарантирующими качество сервиса.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-sm-2 offset-md-3 col-md-9">
+                            <a href="#" class="btn btn-white btn-lg">Зарегистрироваться</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="bg-white article_content">
         <div class="container">
@@ -722,12 +831,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-sm-0">
                     <div class="navbar-brand">Логотип</div>
                     <div class="mb-2">Отдых на море без посредников.</div>
                     <a href="#" class="btn btn-outline-primary">Разместить предложение</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <ul class="list-unstyled ml-lg-5">
                         <li><a href="#">Личный кабинет</a></li>
                         <li><a href="#">Реклама</a></li>
@@ -736,12 +845,12 @@
                         <li><a href="#">Оферта</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-5">
                     <div class="big_socials mb-2">
-                        <a href="#" class="btn btn-link vk"><i class="fab fa-vk"></i></a>
-                        <a href="#" class="btn btn-link fb"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-link od"><i class="fab fa-odnoklassniki"></i></a>
-                        <a href="#" class="btn btn-link in"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-link btn-lg vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="btn btn-link btn-lg fb ml-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-link btn-lg od ml-2"><i class="fab fa-odnoklassniki"></i></a>
+                        <a href="#" class="btn btn-link btn-lg in ml-2"><i class="fab fa-instagram"></i></a>
                     </div>
                     <small>
                         Copyright © 2018 | Sea.ru — сайт объявлений по отдыху на побережье.
@@ -756,6 +865,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

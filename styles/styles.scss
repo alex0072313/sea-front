@@ -1,4 +1,7 @@
 @import "bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
+@import "swiper/swiper.min.css";
+@import "mixins";
 @import "elements";
 
 header{
@@ -47,13 +50,18 @@ header{
                 }
             }
             .top_banner{
-                margin-top: -56px;
+                margin-top: -54px;
             }
 
         }
     }
 
 }
+
+.apparts_section{
+    @include bg('../images/appart.jpg', $primary, .8);
+}
+
 
 footer{
     @extend .py-3;

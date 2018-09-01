@@ -1,0 +1,108 @@
+@mixin bg($img, $podlog_color: null, $podlog_color_opacity:1){
+    position: relative;
+    @if $img != null {
+        background: transparent !important;
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url($img) no-repeat center;
+            background-size: cover;
+            z-index: -2;
+        }
+    }
+    @if $podlog_color != null{
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $podlog_color;
+            z-index: -1;
+            opacity: $podlog_color_opacity;
+        }
+    }
+}
+
+
+//@mixin sprite($top:0, $w:0, $h:0){
+//    background-image: url(($dir-images)+"sprite.png");
+//    background-repeat: no-repeat;
+//    background-position: 0 $top;
+//    width: $w;
+//    height: $h;
+//}
+//
+//@mixin position($left:50%, $top:50%){
+//    position: absolute;
+//    top:$top;
+//    left:$left;
+//    transform: translate(-$left, -$top);
+//}
+//
+//@mixin with_icon($top:0, $w:0, $h:0, $left:0, $top_offset:null){
+//    padding-left: $left;
+//    position: relative;
+//    &:before{
+//        content: '';
+//        display: inline-block;
+//        @include sprite($top, $w, $h);
+//        position: absolute;
+//        left:0;
+//
+//        @if $top_offset == null{
+//            top:50%;
+//            margin-top: -#{($h / 2)};
+//
+//        }@else{
+//            top:$top_offset;
+//        }
+//
+//    }
+//}
+//
+//@mixin animate($time:.1s) {
+//    -webkit-transition: $time ease-out;
+//    -o-transition: $time ease-out;
+//    -moz-transition: $time ease-out;
+//    transition: $time ease-out;
+//}
+//
+//@mixin boxshadow($shadow:''){
+//    -webkit-box-shadow: $shadow;
+//    -moz-box-shadow: $shadow;
+//    box-shadow: $shadow;
+//}
+//
+//@mixin boxradius($radius:$radius){
+//    overflow: hidden;
+//    -webkit-border-radius: $radius;
+//    -moz-border-radius: $radius;
+//    border-radius: $radius;
+//    img{
+//        display: inherit;
+//    }
+//}
+//
+//@mixin rotate($deg:90deg){
+//    -moz-transform: rotate($deg);
+//    -ms-transform: rotate($deg);
+//    -webkit-transform: rotate($deg);
+//    -o-transform: rotate($deg);
+//    transform: rotate($deg);
+//}
+//
+//.inner_absolute{
+//    position: absolute;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//}
