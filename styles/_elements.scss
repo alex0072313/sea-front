@@ -1,3 +1,23 @@
+//sizes
+.h_k1{
+    height: 85px;
+}
+.h_k2{
+    height: 170px;
+}
+.h_k3{
+    height: 255px;
+}
+//typograf
+.text-decoration-none{
+    text-decoration: none !important;
+}
+.text-shadow{
+    text-shadow: 1px 1px 1px $dark;
+}
+//block
+
+
 .section_title{
     @extend .pb-md-5;
     @extend .pb-4;
@@ -72,9 +92,7 @@
 
 }
 .top_banner{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @extend .cover_bg;
     height: 400px;
     margin: 0;
 }
@@ -190,7 +208,7 @@
     }
     &:hover{
         a{
-            text-decoration: none;
+            @extend .text-decoration-none;
         }
     }
 
@@ -220,9 +238,7 @@
 .object_popular{
     .thumb{
         height: 170px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        @extend .cover_bg;
     }
     .inf{
         .text-truncate{
@@ -241,7 +257,7 @@
     }
     &:hover{
         a{
-            text-decoration: none;
+            @extend .text-decoration-none;
         }
     }
 
@@ -301,4 +317,44 @@
     .sl-next{
         right: 0px;
     }
+}
+
+.cityes_in_reg{
+
+    margin: -$grid-gutter-width / 2 0;
+
+    & > .row + .row{
+        margin-top: $grid-gutter-width;
+    }
+    a{
+        @extend .text-decoration-none;
+    }
+    .city{
+        @include animate();
+        @extend .cover_bg;
+        @extend .h_k3;
+        @extend .py-2;
+        @extend .px-3;
+        @extend .position-relative;
+
+        margin: $grid-gutter-width / 2 0;
+
+        color: $white;
+        box-shadow: 0px 150px 110px -130px $dark inset;
+        &:hover{
+            box-shadow: 0px 180px 110px -130px $dark inset;
+        }
+        .price{
+            @include background-opacity($black, .6);
+            position: absolute;
+            right: 1rem;
+            bottom: 0.5rem;
+
+            @extend .py-1;
+            @extend .px-3;
+
+        }
+    }
+
+
 }

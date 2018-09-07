@@ -31,6 +31,17 @@
     }
 }
 
+@mixin background-opacity($color, $opacity: .3) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+.cover_bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 //@mixin sprite($top:0, $w:0, $h:0){
 //    background-image: url(($dir-images)+"sprite.png");
@@ -68,12 +79,12 @@
 //    }
 //}
 //
-//@mixin animate($time:.1s) {
-//    -webkit-transition: $time ease-out;
-//    -o-transition: $time ease-out;
-//    -moz-transition: $time ease-out;
-//    transition: $time ease-out;
-//}
+@mixin animate($time:.1s) {
+    -webkit-transition: $time ease-out;
+    -o-transition: $time ease-out;
+    -moz-transition: $time ease-out;
+    transition: $time ease-out;
+}
 //
 //@mixin boxshadow($shadow:''){
 //    -webkit-box-shadow: $shadow;

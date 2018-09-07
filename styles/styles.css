@@ -5241,7 +5241,7 @@ button.bg-dark:focus {
 .position-static {
   position: static !important; }
 
-.position-relative {
+.position-relative, .cityes_in_reg .city {
   position: relative !important; }
 
 .position-absolute {
@@ -5480,7 +5480,8 @@ button.bg-dark:focus {
   padding: 0.25rem !important; }
 
 .pt-1,
-.py-1 {
+.py-1,
+.cityes_in_reg .city .price {
   padding-top: 0.25rem !important; }
 
 .pr-1,
@@ -5488,7 +5489,8 @@ button.bg-dark:focus {
   padding-right: 0.25rem !important; }
 
 .pb-1,
-.py-1 {
+.py-1,
+.cityes_in_reg .city .price {
   padding-bottom: 0.25rem !important; }
 
 .pl-1,
@@ -5499,7 +5501,8 @@ button.bg-dark:focus {
   padding: 0.5rem !important; }
 
 .pt-2,
-.py-2 {
+.py-2,
+.cityes_in_reg .city {
   padding-top: 0.5rem !important; }
 
 .pr-2,
@@ -5507,7 +5510,8 @@ button.bg-dark:focus {
   padding-right: 0.5rem !important; }
 
 .pb-2,
-.py-2 {
+.py-2,
+.cityes_in_reg .city {
   padding-bottom: 0.5rem !important; }
 
 .pl-2, .choose_reg_tabs .tab-content,
@@ -5523,7 +5527,9 @@ footer {
   padding-top: 1rem !important; }
 
 .pr-3,
-.px-3 {
+.px-3,
+.cityes_in_reg .city,
+.cityes_in_reg .city .price {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -5532,7 +5538,9 @@ footer {
   padding-bottom: 1rem !important; }
 
 .pl-3,
-.px-3 {
+.px-3,
+.cityes_in_reg .city,
+.cityes_in_reg .city .price {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6834,6 +6842,26 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.cover_bg, .top_banner, .object_popular .thumb, .cityes_in_reg .city {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.h_k1 {
+  height: 85px; }
+
+.h_k2 {
+  height: 170px; }
+
+.h_k3, .cityes_in_reg .city {
+  height: 255px; }
+
+.text-decoration-none, .object_small:hover a, .object_popular:hover a, .cityes_in_reg a {
+  text-decoration: none !important; }
+
+.text-shadow {
+  text-shadow: 1px 1px 1px #343a40; }
+
 .choose_reg_tabs .row > [class*=col]:first-child {
   padding-right: 0; }
 .choose_reg_tabs .row > [class*=col]:last-child {
@@ -6869,9 +6897,6 @@ a.text-dark:hover, a.text-dark:focus {
       color: #005e8d; }
 
 .top_banner {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 400px;
   margin: 0; }
 
@@ -6934,8 +6959,6 @@ a.text-dark:hover, a.text-dark:focus {
     .object_small .inf .text-truncate {
       max-width: inherit;
       white-space: normal; } }
-.object_small:hover a {
-  text-decoration: none; }
 
 .last_reviews .review .text-truncate {
   max-width: 320px; }
@@ -6950,10 +6973,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none; }
 
 .object_popular .thumb {
-  height: 170px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  height: 170px; }
 .object_popular .inf .text-truncate {
   max-width: 255px; }
   @media (max-width: 1200px) {
@@ -6966,8 +6986,6 @@ a.text-dark:hover, a.text-dark:focus {
     .object_popular .inf .text-truncate {
       max-width: inherit;
       white-space: normal; } }
-.object_popular:hover a {
-  text-decoration: none; }
 .object_popular.add {
   height: 274px;
   position: relative;
@@ -7034,6 +7052,27 @@ a.text-dark:hover, a.text-dark:focus {
 .swiper-container .sl-next {
   right: 0px; }
 
+.cityes_in_reg {
+  margin: -15px 0; }
+  .cityes_in_reg > .row + .row {
+    margin-top: 30px; }
+  .cityes_in_reg .city {
+    -webkit-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+    margin: 15px 0;
+    color: #fff;
+    box-shadow: 0px 150px 110px -130px #343a40 inset; }
+    .cityes_in_reg .city:hover {
+      box-shadow: 0px 180px 110px -130px #343a40 inset; }
+    .cityes_in_reg .city .price {
+      background: #000;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      right: 1rem;
+      bottom: 0.5rem; }
+
 header > nav .btn-link, header > nav .choose_reg_tabs .nav.nav-pills .nav-link, .choose_reg_tabs .nav.nav-pills header > nav .nav-link {
   color: #343a40; }
 header > nav .navbar-toggler {
@@ -7052,6 +7091,7 @@ header .top {
   header.on_banner .top {
     border-bottom: none; }
   header.on_banner > nav {
+    background: #000;
     background: rgba(0, 0, 0, 0.3); }
     header.on_banner > nav .btn-link, header.on_banner > nav .choose_reg_tabs .nav.nav-pills .nav-link, .choose_reg_tabs .nav.nav-pills header.on_banner > nav .nav-link {
       color: #fff; }
@@ -7063,6 +7103,14 @@ header .top {
           padding: 0.5rem 1rem; }
   header.on_banner .top_banner {
     margin-top: -54px; } }
+header #breadcrumb {
+  margin-top: -45px; }
+  header #breadcrumb .breadcrumb {
+    background: none; }
+    header #breadcrumb .breadcrumb li, header #breadcrumb .breadcrumb a {
+      color: #fff; }
+      header #breadcrumb .breadcrumb li:before, header #breadcrumb .breadcrumb a:before {
+        color: #fff; }
 
 .apparts_section {
   position: relative;

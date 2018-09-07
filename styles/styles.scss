@@ -34,7 +34,8 @@ header{
                 border-bottom: none;
             }
             & > nav{
-                background: rgba(0,0,0,.3);
+                @include background-opacity($black, .3);
+
                 .btn-link{
                     color: $white;
                 }
@@ -52,6 +53,19 @@ header{
                 margin-top: -54px;
             }
 
+        }
+    }
+
+    #breadcrumb{
+        margin-top: -45px;
+        .breadcrumb{
+            background: none;
+            li, a{
+                color: $white;
+                &:before{
+                    color: $white;
+                }
+            }
         }
     }
 
