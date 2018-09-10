@@ -83,6 +83,7 @@
 
         a{
             color: $gray-600;
+            @extend .text-left;
             &:hover, &.active{
                 color: $link-hover-color;
             }
@@ -93,7 +94,7 @@
 }
 .top_banner{
     @extend .cover_bg;
-    height: 400px;
+    //height: 400px;
     margin: 0;
 }
 .regions_tabs{
@@ -235,7 +236,7 @@
     }
 }
 
-.object_popular{
+.object_carusel{
     .thumb{
         height: 170px;
         @extend .cover_bg;
@@ -357,4 +358,12 @@
     }
 
 
+}
+
+.city_menu{
+    a{
+        &.active{
+
+        }
+    }
 }
