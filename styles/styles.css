@@ -4359,16 +4359,14 @@ button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dedede !important; }
 
-.bg-white, .object_small, .last_reviews .review {
+.bg-white, .object_small {
   background-color: #fff !important; }
 
-a.bg-white:hover, a.object_small:hover, .last_reviews a.review:hover, a.bg-white:focus, a.object_small:focus, .last_reviews a.review:focus,
+a.bg-white:hover, a.object_small:hover, a.bg-white:focus, a.object_small:focus,
 button.bg-white:hover,
 button.object_small:hover,
-.last_reviews button.review:hover,
 button.bg-white:focus,
-button.object_small:focus,
-.last_reviews button.review:focus {
+button.object_small:focus {
   background-color: #e6e6e6 !important; }
 
 .bg-orange {
@@ -4387,7 +4385,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white, .object_small, .last_reviews .review {
+.bg-white, .object_small {
   background-color: #fff !important; }
 
 .bg-transparent, header .breadcrumb {
@@ -5241,7 +5239,7 @@ button.bg-dark:focus {
 .position-static {
   position: static !important; }
 
-.position-relative, .cityes_in_reg .city {
+.position-relative, .review_preview .thumb, .cityes_in_reg .city {
   position: relative !important; }
 
 .position-absolute {
@@ -5291,7 +5289,7 @@ button.bg-dark:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm, .last_reviews .review {
+.shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .shadow {
@@ -5502,6 +5500,7 @@ button.bg-dark:focus {
 
 .pt-2,
 .py-2,
+.review_preview .thumb,
 .cityes_in_reg .city {
   padding-top: 0.5rem !important; }
 
@@ -5511,6 +5510,7 @@ button.bg-dark:focus {
 
 .pb-2,
 .py-2,
+.review_preview .thumb,
 .cityes_in_reg .city {
   padding-bottom: 0.5rem !important; }
 
@@ -5528,6 +5528,7 @@ footer {
 
 .pr-3,
 .px-3,
+.review_preview .thumb,
 .cityes_in_reg .city,
 .cityes_in_reg .city .price {
   padding-right: 1rem !important; }
@@ -5539,6 +5540,7 @@ footer {
 
 .pl-3,
 .px-3,
+.review_preview .thumb,
 .cityes_in_reg .city,
 .cityes_in_reg .city .price {
   padding-left: 1rem !important; }
@@ -6842,12 +6844,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-.cover_bg, .top_banner, .object_carusel .thumb, .cityes_in_reg .city {
+.cover_bg, .top_banner, .review_preview .thumb, .object_carusel .thumb, .cityes_in_reg .city {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
-.h_k1 {
+.h_k1, .review_preview .thumb {
   height: 85px; }
 
 .h_k2 {
@@ -6856,7 +6858,7 @@ a.text-dark:hover, a.text-dark:focus {
 .h_k3, .cityes_in_reg .city {
   height: 255px; }
 
-.text-decoration-none, .object_small:hover a, .object_carusel:hover a, .cityes_in_reg a {
+.text-decoration-none, .object_small:hover a, .review_preview a, .object_carusel:hover a, .cityes_in_reg a {
   text-decoration: none !important; }
 
 .text-shadow {
@@ -6959,17 +6961,19 @@ a.text-dark:hover, a.text-dark:focus {
       max-width: inherit;
       white-space: normal; } }
 
-.last_reviews .review .text-truncate {
-  max-width: 320px; }
-  @media (max-width: 1200px) and (min-width: 992px) {
-    .last_reviews .review .text-truncate {
-      max-width: 280px; } }
-  @media (max-width: 768px) {
-    .last_reviews .review .text-truncate {
-      max-width: inherit;
-      white-space: normal; } }
-.last_reviews .review:hover a {
-  text-decoration: none; }
+.review_preview .thumb {
+  -webkit-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  color: #fff;
+  -webkit-box-shadow: 0px -60px 110px -80px #343a40 inset;
+  -moz-box-shadow: 0px -60px 110px -80px #343a40 inset;
+  box-shadow: 0px -60px 110px -80px #343a40 inset; }
+  .review_preview .thumb:hover {
+    -webkit-box-shadow: 0px -80px 110px -80px #343a40 inset;
+    -moz-box-shadow: 0px -80px 110px -80px #343a40 inset;
+    box-shadow: 0px -80px 110px -80px #343a40 inset; }
 
 .object_carusel .thumb {
   height: 170px; }
@@ -7062,8 +7066,12 @@ a.text-dark:hover, a.text-dark:focus {
     transition: 0.1s ease-out;
     margin: 15px 0;
     color: #fff;
+    -webkit-box-shadow: 0px 150px 110px -130px #343a40 inset;
+    -moz-box-shadow: 0px 150px 110px -130px #343a40 inset;
     box-shadow: 0px 150px 110px -130px #343a40 inset; }
     .cityes_in_reg .city:hover {
+      -webkit-box-shadow: 0px 180px 110px -130px #343a40 inset;
+      -moz-box-shadow: 0px 180px 110px -130px #343a40 inset;
       box-shadow: 0px 180px 110px -130px #343a40 inset; }
     .cityes_in_reg .city .price {
       background: #000;

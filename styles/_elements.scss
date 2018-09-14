@@ -214,25 +214,27 @@
     }
 
 }
-.last_reviews{
-    .review{
-        @extend .bg-white;
-        @extend .shadow-sm;
-        .text-truncate{
-            max-width: 320px;
-            @media (max-width: map_get($grid-breakpoints, xl)) and (min-width:map_get($grid-breakpoints, lg)) {
-                max-width: 280px;
-            }
-            @media (max-width: map_get($grid-breakpoints, md)) {
-                max-width: inherit;
-                white-space: normal;
-            }
-        }
+
+.review_preview{
+    a{
+        @extend .text-decoration-none;
+    }
+
+    .thumb{
+        @include animate();
+        @extend .h_k1;
+        @extend .cover_bg;
+        @extend .py-2;
+        @extend .px-3;
+        @extend .position-relative;
+
+        color: $white;
+
+        @include boxshadow(0px -60px 110px -80px $dark inset);
         &:hover{
-            a{
-                text-decoration: none;
-            }
+            @include boxshadow(0px -80px 110px -80px $dark inset);
         }
+
     }
 }
 
@@ -341,9 +343,9 @@
         margin: $grid-gutter-width / 2 0;
 
         color: $white;
-        box-shadow: 0px 150px 110px -130px $dark inset;
+        @include boxshadow(0px 150px 110px -130px $dark inset);
         &:hover{
-            box-shadow: 0px 180px 110px -130px $dark inset;
+            @include boxshadow(0px 180px 110px -130px $dark inset);
         }
         .price{
             @include background-opacity($black, .6);
