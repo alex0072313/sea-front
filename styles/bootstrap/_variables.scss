@@ -728,10 +728,10 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-body-font-size:               $font-size-xs !default;
+$card-body-font-size:               $font-size-base !default;
 
-$card-spacer-y:                     .5rem !default;
-$card-spacer-x:                     1rem !default;
+$card-spacer-y:                     map_get($spacers, 2) !default;
+$card-spacer-x:                     map_get($spacers, 3) !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 $gray-300 !default;
@@ -739,14 +739,14 @@ $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-bg:                           $white !default;
 
-$card-img-overlay-padding:          1.25rem !default;
+$card-img-overlay-padding:          $grid-gutter-width !default;
 
 $card-group-margin:                 ($grid-gutter-width / 2) !default;
 $card-deck-margin:                  $card-group-margin !default;
 
 $card-columns-count:                3 !default;
-$card-columns-gap:                  1.25rem !default;
-$card-columns-margin:               $card-spacer-y !default;
+$card-columns-gap:                  $grid-gutter-width !default;
+$card-columns-margin:               $grid-gutter-width !default;
 
 
 // Tooltips

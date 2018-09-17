@@ -525,12 +525,16 @@
 
 <section class="bg-white article_content">
     <div class="container">
-        <div class="section_title h2 text-center">О Геленджике</div>
+        <div class="section_title h2 text-center">О городе-курорте Геленджике</div>
         <div class="row">
             <div class="col-md-8 text-justify">
-                <div class="embed-responsive embed-responsive-16by9 mb-3">
-                    <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/lZfB842A7Ho?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
+
+                <div class="ytube_iframe h_k3" data-vid="lZfB842A7Ho" data-w="100%"></div>
+
+
+                <!--<div class="embed-responsive embed-responsive-16by9 mb-3">-->
+                    <!--<iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/lZfB842A7Ho?rel=0" frameborder="0" allowfullscreen></iframe>-->
+                <!--</div>-->
                 <p>Курорт Геленджик находится на юге России в центральной части черноморского побережья Краснодарского края, на расстоянии 1500 км от Москвы, 190 км от Краснодара, 30 км от Новороссийска. С западной стороны город омывается тёплыми водами Геленджикской бухты Чёрного моря, с северо-восточной стороны — окружен Кавказскими горами (Маркотхский горный хребет).</p>
                 <p>Примечательно, что Кавказские горы берут своё начало именно в этом районе, на участке побережья от Анапы до Геленджика. Климат здесь средиземноморского типа (переходный от умеренного к субтропическому), с очень тёплым летом и мягкой зимой, что позволяет отдыхать здесь в течение всего года.</p>
 
@@ -543,22 +547,19 @@
 
             </div>
             <div class="col-md-4">
-                <div class="vk-block">
-                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js"></script>
-                    <!-- VK Widget -->
-                    <div id="vk_groups"></div>
-                    <script type="text/javascript">
-                        VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", heigh: "600"}, 25608136);
-                    </script>
+
+                <div class="bar-box">
+                    <div class="h_k3 vk_widget" data-group="25608136" data-m="0" ></div>
                 </div>
 
-                <div class="h5 mt-3">Курорты рядом</div>
-                
-                <ul class="list-unstyled">
-                    <li><a href="#">Архипо-Осиповка</a> <small class="text-secondary">~ 62 км.</small></li>
-                    <li><a href="#">Бетта</a> <small class="text-secondary">~ 44 км.</small></li>
-                    <li><a href="#">Джанхот</a> <small class="text-secondary">~ 12 км.</small></li>
-                </ul>
+                <div class="bar-box">
+                    <div class="h5 mt-3">Курорты рядом</div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Архипо-Осиповка</a> <small class="text-secondary">~ 62 км.</small></li>
+                        <li><a href="#">Бетта</a> <small class="text-secondary">~ 44 км.</small></li>
+                        <li><a href="#">Джанхот</a> <small class="text-secondary">~ 12 км.</small></li>
+                    </ul>
+                </div>
 
                 <div class="h5 mt-3">Быстрый подбор жилья</div>
 
@@ -568,33 +569,171 @@
                 <a href="#" class="btn btn-outline-primary btn-sm mb-1">Большая кухня</a>
                 <a href="#" class="btn btn-outline-primary btn-sm mb-1">Эконом вариант</a>
 
-
             </div>
         </div>
 
     </div>
 </section>
 
-<section class="bg-white">
+<section class="add_obj_in_city_section jumbotron jumbotron-fluid d-flex align-items-center text-white m-0">
     <div class="container">
-        <div class="section_title h2 text-center">Новые отзывы</div>
+        <div class="section_title h2 text-left text-sm-center">Почему Вам выгодно размещаться у нас?</div>
+        <div class="row">
+
+            <div class="col-lg-4 row">
+                <div class="col-sm-2 col-md-3 text-right d-none d-sm-block">
+                    <i class="fa fa-universal-access h1 mt-2 text-orange"></i>
+                </div>
+                <div class="col-sm-10 col-md-9">
+                    <div class="h5">Быстрая регистрация</div>
+                    Это займет 2 минуты! Добавьте описание Вашего обьекта, фотографии и цены.
+                </div>
+            </div>
+
+            <div class="col-lg-4 row mt-3 mt-lg-0">
+                <div class="col-sm-2 col-md-3 text-right d-none d-sm-block">
+                    <i class="fa fa-cog h1 mt-2 text-orange"></i>
+                </div>
+                <div class="col-sm-10 col-md-9">
+                    <div class="h5">Удобное управление</div>
+                    Легко редактируйте информацию, отслеживайте статистику по вашему обьекту.
+                </div>
+            </div>
+
+            <div class="col-lg-4 row mt-3 mt-lg-0">
+                <div class="col-sm-2 col-md-3 text-right d-none d-sm-block">
+                    <i class="fa fa-signal h1 mt-2 text-orange"></i>
+                </div>
+                <div class="col-sm-10 col-md-9">
+                    <div class="h5">Результат</div>
+                    Получайте заявки на бронирование Вашего обьекта круглый год!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 mt-md-5">
+            <a href="#" class="btn btn-orange btn-lg">Добавить свой обьект</a>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="bg-white last_small_reviews section_content">
+    <div class="container">
+        <div class="section_title h2 text-center">Новые отзывы по жилью</div>
 
         <div class="row">
-            <div class="col-md-3">
 
-
-                <div class="review_preview card">
-                    <a href="#">
-                        <div class="card-img-top thumb rounded h_k2 d-flex align-items-end" style="background-image: url('images/pop.jpg');">
-                            <div class="text-truncate name text-shadow text-white font-weight-medium">Гостиница "Империал"</div>
+            <div class="col-md-6 col-lg-3 col-xl-3">
+                <div class="card small_review">
+                <a href="#" class="d-block">
+                    <div class="card-img-top thumb d-flex align-items-end" style="background-image: url('images/o_t1.jpg');">
+                        <div class="h6 text-shadow text-truncate mb-0">Гостиница "Капитан"</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-1">Только вернулись из Геленджика. отдыхом остались очень довольны...</p>
+                        <div class="stars text-truncate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-success">9.1</span>
                         </div>
-                        <div class="card-body">
-                            Трехзвездочный отель «Орион» расположен в Геленджике. К услугам гостей номера с собственной террасой, сезонный открытый бассейн, бар, круглосуточная стойка регистрации и бесплатный Wi-Fi.
-                        </div>
-                    </a>
-                </div>
-
+                    </div>
+                </a>
             </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-xl-3 mt-3 mt-md-0">
+                <div class="card small_review">
+                <a href="#" class="d-block">
+                    <div class="card-img-top thumb d-flex align-items-end" style="background-image: url('images/o_t3.jpg');">
+                        <div class="h6 text-shadow text-truncate mb-0">Гостевой дом "Жемчужина"</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-1">Только вернулись из Геленджика. отдыхом остались очень довольны...</p>
+                        <div class="stars text-truncate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-success">8.2</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-xl-3 mt-3 mt-lg-0">
+                <div class="card small_review">
+                <a href="#" class="d-block">
+                    <div class="card-img-top thumb d-flex align-items-end" style="background-image: url('images/o_t2.jpg');">
+                        <div class="h6 text-shadow text-truncate mb-0">Гостиница "Фаворит"</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-1">Только вернулись из Геленджика. отдыхом остались очень довольны...</p>
+                        <div class="stars text-truncate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-orange">9.6</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-xl-3 mt-3 mt-lg-0">
+                <div class="card small_review">
+                <a href="#" class="d-block">
+                    <div class="card-img-top thumb d-flex align-items-end" style="background-image: url('images/o_t4.jpg');">
+                        <div class="h6 text-shadow text-truncate mb-0">Курортный отель "Дельфин"</div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-1">Только вернулись из Геленджика. отдыхом остались очень довольны...</p>
+                        <div class="stars text-truncate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-secondary">5.5</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 mt-md-5">
+            <a href="#" class="btn btn-lg btn-outline-primary">Все отзывы по жилью в Геленджике</a>
         </div>
 
     </div>
