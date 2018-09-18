@@ -17,6 +17,16 @@
     text-shadow: 1px 1px 1px $dark;
 }
 
+.text-truncate{
+    &.xl-none{
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            max-width: inherit;
+            white-space: normal;
+        }
+    }
+
+}
+
 //blocks
 .stars{
     @extend small;

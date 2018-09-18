@@ -281,21 +281,6 @@ header{
         height: 170px;
         @extend .cover_bg;
     }
-    .inf{
-        .text-truncate{
-            max-width: 255px;
-            @media (max-width:map_get($grid-breakpoints, xl)) {
-                max-width: 210px;
-            }
-            @media (max-width: map_get($grid-breakpoints, md)) {
-                max-width: 240px;
-            }
-            @media (max-width: map_get($grid-breakpoints, sm)) {
-                max-width: inherit;
-                white-space: normal;
-            }
-        }
-    }
     &:hover{
         a{
             @extend .text-decoration-none;
@@ -425,26 +410,6 @@ header{
             @include boxshadow(0px -180px 110px -130px $dark inset);
         }
     }
-    .text-truncate{
-        max-width: 221px;
-        @media (max-width:map_get($grid-breakpoints, xl)) {
-            max-width: 255px;
-        }
-        @media (max-width: map_get($grid-breakpoints, md)) {
-            max-width: 240px;
-        }
-        @media (max-width: map_get($grid-breakpoints, sm)) {
-            max-width: inherit;
-            white-space: normal;
-        }
-    }
-
-    .stars{
-        @include media-breakpoint-only(md) {
-            font-size: $font-size-xs;
-        }
-    }
-
 
 }
 
